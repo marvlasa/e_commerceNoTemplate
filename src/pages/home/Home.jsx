@@ -1,10 +1,10 @@
 import React from "react";
+import Footer from "../../components/footer/Footer";
 
 function Home() {
   return (
     <div>
-      <h1>Holis</h1>
-      <img src="https://api.carlosgutierrez.com.uy/fotos/fotos/10735/ppal-desktop-1x.jpg"></img>
+      <Footer />
     </div>
   );
 }
