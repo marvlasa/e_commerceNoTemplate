@@ -1,0 +1,20 @@
+.nav {
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#logo {
+  max-width: 150px;
+  max-height: 50px;
+}
+
+.icon {
+  margin-right: 1rem;
+}
