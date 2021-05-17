@@ -5,8 +5,6 @@ import NavBar from "../../components/navbar/Navbar";
 function Home() {
   return (
     <div>
-      <NavBar />
-
       <Carrousel />
     </div>
   );

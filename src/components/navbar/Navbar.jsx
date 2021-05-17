@@ -2,19 +2,22 @@ import "./Navbar.css";
 import { Navbar, Nav, Form, FormControl, Button } from "react-bootstrap";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 
 function NavBar() {
   return (
     <div>
       <Navbar bg="dark" variant="dark" className="nav" expand="md">
-        <Navbar.Brand href="#home ">
-          <img src="https://i.postimg.cc/rwtyGk6S/logo.png" id="logo" />
+        <Navbar.Brand>
+          <Link to="/">
+            <img src="https://i.postimg.cc/rwtyGk6S/logo.png" id="logo" />
+          </Link>
         </Navbar.Brand>
 
         <Nav className="mr-auto">
-          <Nav.Link href="#home">Inicio</Nav.Link>
-          <Nav.Link href="#features">Categorias</Nav.Link>
-          <Nav.Link href="#pricing">Sobre Nosotros</Nav.Link>
+          {/* <Nav.Link >Inicio</Nav.Link> */}
+          <Link to="/category">Categorias</Link>
+          <Link to="/aboutUs">Sobre Nosotros</Link>
         </Nav>
         <Form inline className="form">
           <FontAwesomeIcon icon={faSearch} className="icon" />
