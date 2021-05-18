@@ -1,0 +1,15 @@
+img {
+  height: auto;
+  width: 100%;
+}
+
+.pricing {
+  border: 0.3px solid grey;
+  box-shadow: 0 0.15rem 1.75rem 0 rgb(33 40 50 / 15%);
+  overflow: hidden;
+  position: relative;
+  margin-left: 60px;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
