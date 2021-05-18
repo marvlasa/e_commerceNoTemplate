@@ -24,21 +24,26 @@ function Product() {
 
   return (
     <div>
-      <div className="row align-items-center mb-5">
-        {products &&
-          products.map((item) => {
-            return (
-              <div className="col-md-3 pricing rounded">
-                <img src={item.img} />
-                <h1>{item.name}</h1>
-                <p>{item.description}</p>
-                <p>{item.price}</p>
-                <button className="btn btn-warning mb-3">
-                  Agregar al carrito
-                </button>
-              </div>
-            );
-          })}
+      <div className="container">
+        <div className="row  mb-5">
+          {products &&
+            products.map((item) => {
+              return (
+                <div className="col-md-3 pricing rounded">
+                  <img src={item.img} />
+                  <h1>{item.name}</h1>
+                  <p>{item.description.substring(0, 50)}</p>
+                  <p2>${item.price} </p2>
+
+                  <div className="button">
+                    <button className="btn btn-warning mb-3">
+                      Agregar al carrito
+                    </button>
+                  </div>
+                </div>
+              );
+            })}
+        </div>
       </div>
     </div>
   );
