@@ -4,11 +4,11 @@ img {
 }
 
 .pricing {
-  width: 20%;
-  margin-right: 5%;
   margin-top: 2rem;
+  padding: 1rem;
   border: 0.3px solid grey;
   box-shadow: 0 0.15rem 1.75rem 0 rgb(33 40 50 / 15%);
+
   overflow: hidden;
   position: relative;
   background-clip: border-box;
@@ -29,11 +29,13 @@ img {
   display: flex;
 
   justify-content: center;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .pricing img {
+  height: 200px;
   padding: 1rem;
+  object-fit: contain;
 }
 
 .button {
