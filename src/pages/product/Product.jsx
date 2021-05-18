@@ -1,8 +1,7 @@
 import axios from "axios";
 import React from "react";
-import { useEffect, useState } from "react";
-
 import "./Product.css";
+import { useEffect, useState } from "react";
 
 function Product() {
   const [products, setProducts] = useState([]);
