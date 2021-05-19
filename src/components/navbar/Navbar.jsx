@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 import Cart from "../cart/Cart";
 
-function NavBar({ cartItems }) {
+function NavBar({ cartItems, handleSearchBox }) {
   return (
     <div>
       <Navbar bg="white" variant="white" className="nav" expand="md">
@@ -27,12 +27,19 @@ function NavBar({ cartItems }) {
           <Link to="/aboutUs">Sobre Nosotros</Link>
         </Nav>
         <Cart cartItems={cartItems} />
+
         <Form inline className="form">
           <FontAwesomeIcon icon={faSearch} className="icon-faSearch" />
-          <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+          <FormControl
+            type="text"
+            placeholder="Search"
+            onChange={handleSearchBox}
+            className="mr-sm-2"
+          />
           {/* {<Button variant="outline-info">Search</Button>
            }{" "} */}
         </Form>
+        <i class="fas fa-user"></i>
       </Navbar>
     </div>
   );

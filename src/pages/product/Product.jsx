@@ -34,7 +34,7 @@ function Product({ handleCartItems }) {
                     <Link to={"/product/" + item.slug}>
                       <img src={item.img} />
                       <h1>{item.name}</h1>
-                      <p>{item.description.substring(0, 15)}</p>
+                      {/* <p>{item.description.substring(0, 15)}</p> */}
                     </Link>
                     <p2>${item.price} </p2>
 
