@@ -1,0 +1,35 @@
+.register {
+  margin-top: 5rem;
+}
+
+#rowRegister {
+  margin-top: 2rem;
+}
+
+#registerImage {
+  border-bottom-left-radius: 50px;
+  border-top-left-radius: 50px;
+  height: 500px;
+  background-image: url("https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2020/09/android-tv-2071479.jpg");
+  background-size: 100% 100%;
+}
+
+#registerInput {
+  height: 500px;
+  border-right: tomato 1px solid;
+  border-top: tomato 1px solid;
+  border-bottom: tomato 1px solid;
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+.register {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.register input {
+  border-radius: 5px;
+  border: none;
+}

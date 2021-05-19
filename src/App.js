@@ -1,11 +1,13 @@
-import { BrowserRouter, Route, Switch } from "react-router-dom";
-import NavBar from "./components/navbar/Navbar";
-import aboutUs from "./pages/aboutUs/aboutUs";
-import Category from "./pages/category/Category";
-import ProductDetail from "./pages/productDetail/ProductDetail";
-import Home from "./pages/home/Home";
-import Footer from "./components/footer/Footer";
 import { useState, useEffect } from "react";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Home from "./pages/home/Home";
+import NavBar from "./components/navbar/Navbar";
+import Category from "./pages/category/Category";
+import aboutUs from "./pages/aboutUs/aboutUs";
+import CartBuy from "./pages/cartBuy/CartBuy";
+import Register from "./pages/register/Register";
+import ProductDetail from "./pages/productDetail/ProductDetail";
+import Footer from "./components/footer/Footer";
 /* import "bootswatch/dist/zephyr/bootstrap.min.css"; */
 
 function App() {
@@ -60,6 +62,8 @@ function App() {
           <Route path="/aboutUs" component={aboutUs} />
           <Route path="/category" component={Category} />
           <Route path="/product/:slug" component={ProductDetail} />
+          <Route path="/cart" component={CartBuy} />
+          <Route path="/register" component={Register} />
         </Switch>
         <Footer />
       </BrowserRouter>

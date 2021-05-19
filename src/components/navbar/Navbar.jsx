@@ -26,7 +26,10 @@ function NavBar({ cartItems, handleSearchBox }) {
           </Link>
           <Link to="/aboutUs">Sobre Nosotros</Link>
         </Nav>
-        <Cart cartItems={cartItems} />
+
+        <Link to="/cart">
+          <Cart cartItems={cartItems} />
+        </Link>
 
         <Form inline className="form">
           <FontAwesomeIcon icon={faSearch} className="icon-faSearch" />
@@ -39,7 +42,9 @@ function NavBar({ cartItems, handleSearchBox }) {
           {/* {<Button variant="outline-info">Search</Button>
            }{" "} */}
         </Form>
-        <i class="fas fa-user"></i>
+        <Link to="/register">
+          <i class="fas fa-user"></i>
+        </Link>
       </Navbar>
     </div>
   );

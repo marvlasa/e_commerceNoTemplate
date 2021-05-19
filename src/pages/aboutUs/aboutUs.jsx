@@ -12,7 +12,7 @@ function aboutUs() {
       <div className="container aboutUs">
         <h1>Sobre Nosotros</h1>
         <p1>
-          Somos un grupo de estudiantes de la 8º edición del bootcamp de Hack
+          Somos un grupo de estudiantes de la 3º edición del bootcamp de Hack
           Academy. En este proyecto buscamos demostrar una gran parte del
           conocimiento que hemos adquirido a lo largo del curso. Este proyecto
           se basa en React js en la parte de Front-End y MySQL en cuanto a
