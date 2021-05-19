@@ -1,4 +1,7 @@
 /*footer*/
+footer {
+  margin-top: 2rem;
+}
 
 #footer-black {
   background-color: #212832;

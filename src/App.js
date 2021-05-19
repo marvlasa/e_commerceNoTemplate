@@ -2,10 +2,11 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import NavBar from "./components/navbar/Navbar";
 import aboutUs from "./pages/aboutUs/aboutUs";
 import Category from "./pages/category/Category";
-import productDetail from "./pages/productDetail/productDetail";
+import ProductDetail from "./pages/productDetail/ProductDetail";
 import Home from "./pages/home/Home";
 import Footer from "./components/footer/Footer";
 import { useState } from "react";
+/* import "bootswatch/dist/zephyr/bootstrap.min.css"; */
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
@@ -29,7 +30,7 @@ function App() {
 
           <Route path="/aboutUs" component={aboutUs} />
           <Route path="/category" component={Category} />
-          <Route path="/product/:id" component={productDetail} />
+          <Route path="/product/:id" component={ProductDetail} />
         </Switch>
         <Footer />
       </BrowserRouter>

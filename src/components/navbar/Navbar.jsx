@@ -8,7 +8,7 @@ import Cart from "../cart/Cart";
 function NavBar({ cartItems }) {
   return (
     <div>
-      <Navbar bg="dark" variant="dark" className="nav" expand="md">
+      <Navbar bg="white" variant="white" className="nav" expand="md">
         <Navbar.Brand>
           <Link to="/">
             <img src="https://i.postimg.cc/rwtyGk6S/logo.png" id="logo" />
