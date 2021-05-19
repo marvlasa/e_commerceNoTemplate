@@ -3,7 +3,7 @@ import React from "react";
 import "./Product.css";
 import { useEffect, useState } from "react";
 
-function Product() {
+function Product({ handleCartItems }) {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -36,7 +36,10 @@ function Product() {
                     <p className="price">${item.price} </p>
 
                     <div className="button">
-                      <button className="btn btn-warning mb-3">
+                      <button
+                        onClick={() => handleCartItems(item.name)}
+                        className="btn btn-warning mb-3"
+                      >
                         Agregar al carrito
                       </button>
                     </div>

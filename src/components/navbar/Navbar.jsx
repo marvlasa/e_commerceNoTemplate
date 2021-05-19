@@ -3,8 +3,9 @@ import { Navbar, Nav, Form, FormControl, Button } from "react-bootstrap";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
+import Cart from "../cart/Cart";
 
-function NavBar() {
+function NavBar({ cartItems }) {
   return (
     <div>
       <Navbar bg="dark" variant="dark" className="nav" expand="md">
@@ -19,6 +20,7 @@ function NavBar() {
           <Link to="/category">Categorias</Link>
           <Link to="/aboutUs">Sobre Nosotros</Link>
         </Nav>
+        <Cart cartItems={cartItems} />
         <Form inline className="form">
           <FontAwesomeIcon icon={faSearch} className="icon" />
           <FormControl type="text" placeholder="Search" className="mr-sm-2" />

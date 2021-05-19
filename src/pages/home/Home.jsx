@@ -6,12 +6,11 @@ import Carrousel from "../../components/carrousel/Carrousel";
 
 // import Navbar from "../../components/navbar/Navbar";
 
-function Home({ setCartItems }) {
-  console.log(setCartItems);
+function Home({ handleCartItems }) {
   return (
     <div>
       <Carrousel />
-      <Product />
+      <Product handleCartItems={handleCartItems} />
     </div>
   );
 }
