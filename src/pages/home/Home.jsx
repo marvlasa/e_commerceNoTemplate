@@ -6,7 +6,8 @@ import Carrousel from "../../components/carrousel/Carrousel";
 
 // import Navbar from "../../components/navbar/Navbar";
 
-function Home() {
+function Home({ setCartItems }) {
+  console.log(setCartItems);
   return (
     <div>
       <Carrousel />

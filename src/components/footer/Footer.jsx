@@ -5,15 +5,15 @@ function Footer() {
   return (
     <div>
       <footer id="footer-black">
-        <div id="footer-text" class="container text-gray">
-          <div class="row mt-5">
-            <div class="col-md-3 mt-5">
-              <div class="brand">Electro hack</div>
-              <div class="mb-2">Haz tu vida simple</div>
+        <div id="footer-text" className="container text-gray">
+          <div className="row mt-5">
+            <div className="col-md-3 mt-5">
+              <div className="brand">Electro hack</div>
+              <div className="mb-2">Haz tu vida simple</div>
               <div>
                 <a href="#">
                   <svg
-                    class="svg-inline--fa fa-instagram fa-w-14"
+                    className="svg-inline--fa fa-instagram fa-w-14"
                     aria-hidden="true"
                     focusable="false"
                     data-prefix="fab"
@@ -31,7 +31,7 @@ function Footer() {
                 </a>
                 <a href="#">
                   <svg
-                    class="svg-inline--fa fa-facebook fa-w-16"
+                    className="svg-inline--fa fa-facebook fa-w-16"
                     aria-hidden="true"
                     focusable="false"
                     data-prefix="fab"
@@ -49,7 +49,7 @@ function Footer() {
                 </a>
                 <a href="#">
                   <svg
-                    class="svg-inline--fa fa-github fa-w-16"
+                    className="svg-inline--fa fa-github fa-w-16"
                     aria-hidden="true"
                     focusable="false"
                     data-prefix="fab"
@@ -67,7 +67,7 @@ function Footer() {
                 </a>
                 <a href="#">
                   <svg
-                    class="svg-inline--fa fa-twitter fa-w-16"
+                    className="svg-inline--fa fa-twitter fa-w-16"
                     aria-hidden="true"
                     focusable="false"
                     data-prefix="fab"
@@ -85,78 +85,78 @@ function Footer() {
                 </a>
               </div>
             </div>
-            <div class="col-md-9">
-              <div class="row mt-5">
-                <div class="col-md-3 mb-4">
-                  <div class="mb-3">EMPRESA</div>
-                  <ul class="nonecircle">
-                    <li class="spacelista">
+            <div className="col-md-9">
+              <div className="row mt-5">
+                <div className="col-md-3 mb-4">
+                  <div className="mb-3">EMPRESA</div>
+                  <ul className="nonecircle">
+                    <li className="spacelista">
                       <a href="#">Quiénes somos?</a>
                     </li>
-                    <li class="spacelista">
+                    <li className="spacelista">
                       <a href="#">Locales y horarios</a>
                     </li>
-                    <li class="spacelista">
+                    <li className="spacelista">
                       <a href="#">Servicio</a>
                     </li>
-                    <li class="spacelista">
+                    <li className="spacelista">
                       <a href="#">Unirse a nuestro equipo laboral</a>
                     </li>
                   </ul>
                 </div>
-                <div class="col-md-3 mb-4">
-                  <div class="mb-3">TÉCNICO</div>
-                  <ul class="nonecircle">
-                    <li class="spacelista">
+                <div className="col-md-3 mb-4">
+                  <div className="mb-3">TÉCNICO</div>
+                  <ul className="nonecircle">
+                    <li className="spacelista">
                       <a href="#">Documentation</a>
                     </li>
-                    <li class="spacelista">
+                    <li className="spacelista">
                       <a href="#">Changelog</a>
                     </li>
-                    <li class="spacelista">
+                    <li className="spacelista">
                       <a href="#">Theme Customizer</a>
                     </li>
-                    <li class="spacelista">
+                    <li className="spacelista">
                       <a href="#">Ui Kit</a>
                     </li>
                   </ul>
                 </div>
-                <div class="col-md-3 mb-4">
-                  <div class="mb-3">ACCESORIOS</div>
-                  <ul class="nonecircle">
-                    <li class="spacelista">
+                <div className="col-md-3 mb-4">
+                  <div className="mb-3">ACCESORIOS</div>
+                  <ul className="nonecircle">
+                    <li className="spacelista">
                       <a href="#">Utilities</a>
                     </li>
-                    <li class="spacelista">
+                    <li className="spacelista">
                       <a href="#">Components</a>
                     </li>
-                    <li class="spacelista">
+                    <li className="spacelista">
                       <a href="#">Layouts</a>
                     </li>
-                    <li class="spacelista">
+                    <li className="spacelista">
                       <a href="#">Code Samples</a>
                     </li>
-                    <li class="spacelista">
+                    <li className="spacelista">
                       <a href="#">Products</a>
                     </li>
-                    <li class="spacelista">
+                    <li className="spacelista">
                       <a href="#">Affiliates</a>
                     </li>
-                    <li class="spacelista">
+                    <li className="spacelista">
                       <a href="#">Updates</a>
                     </li>
                   </ul>
                 </div>
-                <div class="col-md-3 mb-4">
-                  <div class="mb-3">LEGAL</div>
-                  <ul class="nonecircle">
-                    <li class="spacelista">
+                <div className="col-md-3 mb-4">
+                  <div className="mb-3">LEGAL</div>
+                  <ul className="nonecircle">
+                    <li className="spacelista">
                       <a href="#">Privacy Policy</a>
                     </li>
-                    <li class="spacelista">
+                    <li className="spacelista">
                       <a href="#">Terms and Conditions</a>
                     </li>
-                    <li class="spacelista">
+                    <li className="spacelista">
                       <a href="#">License</a>
                     </li>
                   </ul>
@@ -165,11 +165,11 @@ function Footer() {
             </div>
           </div>
 
-          <hr class="space-pptc" />
+          <hr className="space-pptc" />
 
-          <div class="row align-items center pb-5">
-            <div class="col-md-6">Copyright c Your Website 2021</div>
-            <div class="col-md-6 text-md-end">
+          <div className="row align-items center pb-5">
+            <div className="col-md-6">Copyright c Your Website 2021</div>
+            <div className="col-md-6 text-md-end">
               <a href="">Privacy Policy</a> . <a href="">Terms & Conditions</a>
             </div>
           </div>

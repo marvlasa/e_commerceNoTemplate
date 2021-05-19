@@ -7,7 +7,7 @@ function Product() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    const URL = "http://localhost:3080/products";
+    const URL = "http://localhost:3079/products";
 
     const products = async () => {
       try {
@@ -28,12 +28,12 @@ function Product() {
           {products &&
             products.map((item) => {
               return (
-                <div className="col-md-3 ">
+                <div key={item.id} className="col-md-3 ">
                   <div className="pricing">
-                    <img src={item.img} />
+                    <img src={item.img} alt="" />
                     <h1>{item.name}</h1>
                     <p>{item.description.substring(0, 50)}</p>
-                    <p2>${item.price} </p2>
+                    <p className="price">${item.price} </p>
 
                     <div className="button">
                       <button className="btn btn-warning mb-3">
