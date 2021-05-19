@@ -2,8 +2,9 @@
 
 #footer-black {
   background-color: #212832;
-  padding-top: 4rem;
+  padding-top: 3rem;
   padding-bottom: 4rem;
+  margin-top: 3rem;
 }
 
 #footer-text {
@@ -16,6 +17,7 @@
 
 .space-pptc {
   margin-bottom: 5rem;
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 .text-gray {

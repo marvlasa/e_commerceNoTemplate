@@ -4,17 +4,23 @@
   justify-content: space-around;
 }
 
-.form {
+/* .form {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-}
-#logo {
-  max-width: 150px;
-  max-height: 50px;
+} */
+
+.nav-link1 {
+  margin-right: 60px;
+  margin-left: 90px;
 }
 
-.icon {
-  margin-right: 1rem;
+#logo {
+  max-width: 200px;
+  max-height: 100px;
+}
+
+.icon-faSearch {
+  margin-right: 0.5rem !important;
 }
