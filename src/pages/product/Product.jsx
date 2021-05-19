@@ -2,8 +2,9 @@ import axios from "axios";
 import React from "react";
 import "./Product.css";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
-function Product({ handleCartItems }) {
+function Product() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -28,18 +29,17 @@ function Product({ handleCartItems }) {
           {products &&
             products.map((item) => {
               return (
-                <div key={item.id} className="col-md-3 ">
+                <div className="col-md-3 ">
                   <div className="pricing">
-                    <img src={item.img} alt="" />
-                    <h1>{item.name}</h1>
-                    <p>{item.description.substring(0, 50)}</p>
-                    <p className="price">${item.price} </p>
+                    <Link to={"/product/" + item.id}>
+                      <img src={item.img} />
+                      <h1>{item.name}</h1>
+                      <p>{item.description.substring(0, 50)}</p>
+                    </Link>
+                    <p2>${item.price} </p2>
 
                     <div className="button">
-                      <button
-                        onClick={() => handleCartItems(item.name)}
-                        className="btn btn-warning mb-3"
-                      >
+                      <button className="btn btn-warning mb-3">
                         Agregar al carrito
                       </button>
                     </div>
