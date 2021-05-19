@@ -1,0 +1,8 @@
+.productDetail img {
+  height: 70vh;
+  width: 100%;
+}
+
+.col1 {
+  border-right: grey 1px solid;
+}
