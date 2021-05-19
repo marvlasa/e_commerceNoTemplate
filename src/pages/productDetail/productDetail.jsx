@@ -5,11 +5,11 @@ import { useParams } from "react-router-dom";
 import "./ProductDetail.css";
 
 function ProductDetail() {
-  let { id } = useParams();
+  let { slug } = useParams();
   const [productsDetail, setProductsDetail] = useState([]);
 
   useEffect(() => {
-    const URL = `http://localhost:3079/product/${id}`;
+    const URL = `http://localhost:3079/product/${slug}`;
 
     const productsDetail = async () => {
       try {

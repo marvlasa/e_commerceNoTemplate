@@ -31,7 +31,7 @@ function Product() {
               return (
                 <div className="col-md-3 ">
                   <div className="pricing">
-                    <Link to={"/product/" + item.id}>
+                    <Link to={"/product/" + item.slug}>
                       <img src={item.img} />
                       <h1>{item.name}</h1>
                       <p>{item.description.substring(0, 50)}</p>

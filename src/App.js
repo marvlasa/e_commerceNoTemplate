@@ -30,7 +30,7 @@ function App() {
 
           <Route path="/aboutUs" component={aboutUs} />
           <Route path="/category" component={Category} />
-          <Route path="/product/:id" component={ProductDetail} />
+          <Route path="/product/:slug" component={ProductDetail} />
         </Switch>
         <Footer />
       </BrowserRouter>
