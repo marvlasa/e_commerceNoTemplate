@@ -2,6 +2,11 @@
   padding: 20px;
   display: flex;
   justify-content: space-around;
+  color: rgb(97, 96, 96);
+}
+
+.bg-white {
+  background-color: rgb(56, 53, 53);
 }
 
 /* .form {
