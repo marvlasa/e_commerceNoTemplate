@@ -21,6 +21,35 @@
   border-bottom: tomato 1px solid;
   border-bottom-right-radius: 50px;
   border-top-right-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.form1 label {
+  display: flex;
+  flex-direction: column;
+  max-width: 200px;
+}
+
+.form1 input {
+  max-width: 200px;
+  border-radius: 20px;
+  margin-top: 10px;
+  border: none;
+}
+
+.form2 label {
+  display: flex;
+  flex-direction: column;
+}
+
+.form2 input {
+  max-width: 200px;
+  border-radius: 20px;
+  margin-top: 10px;
+  border: none;
 }
 
 .register {
@@ -32,4 +61,23 @@
 .register input {
   border-radius: 5px;
   border: none;
+}
+
+.headerForm {
+  padding: 1rem;
+}
+
+.footerForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-facebook {
+  color: darkblue;
+  font-size: 24px;
+}
+.fa-google-plus-g {
+  color: darkred;
+  font-size: 26px;
 }
