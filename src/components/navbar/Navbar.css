@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-around;
   color: rgb(97, 96, 96);
-  position: fixed;
+
   z-index: 100;
   width: 100%;
 }
