@@ -8,6 +8,7 @@ import CartBuy from "./pages/cartBuy/CartBuy";
 import Register from "./pages/register/Register";
 import ProductDetail from "./pages/productDetail/ProductDetail";
 import Footer from "./components/footer/Footer";
+import "./App.css";
 /* import "bootswatch/dist/zephyr/bootstrap.min.css"; */
 
 function App() {

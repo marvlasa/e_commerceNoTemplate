@@ -11,7 +11,13 @@ function NavBar({ cartItems, setSearchField }) {
   }
   return (
     <div>
-      <Navbar bg="white" variant="white" className="nav" expand="md">
+      <Navbar
+        bg="white"
+        variant="white"
+        className="nav"
+        expand="md"
+        fixed="top"
+      >
         <Navbar.Brand>
           <Link to="/">
             <img

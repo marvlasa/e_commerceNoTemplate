@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 // import Footer from "../../components/footer/Footer";
 import Product from "../product/Product";
+// import Navbar from "../../components/navbar/Navbar";
 
 import Carrousel from "../../components/carrousel/Carrousel";
 
@@ -12,6 +13,7 @@ function Home({ handleCartItems, searchField }) {
   }, []);
   return (
     <div>
+      {/* <Navbar /> */}
       <Carrousel />
       <Product handleCartItems={handleCartItems} searchField={searchField} />
     </div>
