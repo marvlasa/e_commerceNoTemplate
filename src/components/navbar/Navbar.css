@@ -2,14 +2,14 @@
   padding: 20px;
   display: flex;
   justify-content: space-around;
-  color: rgb(97, 96, 96);
+  color: rgba(255, 255, 255, 0.6);
   position: fixed;
   z-index: 100;
   width: 100%;
 }
 
 .bg-white {
-  background-color: rgb(56, 53, 53) !important;
+  background-color: #212832 !important;
 }
 
 /* .form {
@@ -31,4 +31,13 @@
 
 .icon-faSearch {
   margin-right: 0.5rem !important;
+}
+
+a {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+a:hover {
+  color: rgb(187, 63, 88);
+  text-decoration: none;
 }

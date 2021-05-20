@@ -41,8 +41,8 @@ function Product({ handleCartItems, searchField }) {
                   <div className="pricing">
                     <Link to={"/product/" + item.slug}>
                       <img src={item.img} />
-                      <h1>{item.name}</h1>
-                      {/* <p>{item.description.substring(0, 15)}</p> */}
+                      <h1>{item.name.substring(0, 9)}</h1>
+                      {/* <p>{item.description}</p> */}
                     </Link>
                     <p>${item.price} </p>
 

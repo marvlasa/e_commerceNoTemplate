@@ -25,7 +25,7 @@ function NavBar({ cartItems, setSearchField }) {
         <Nav className="mr-auto ">
           {/* <Nav.Link >Inicio</Nav.Link> */}
           <Link className="nav-link1" to="/category">
-            Categorias
+            Categorías
           </Link>
           <Link to="/aboutUs">Sobre Nosotros</Link>
         </Nav>

@@ -15,6 +15,11 @@ img {
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
+  transition: transform 0.2s;
+}
+
+.pricing:hover {
+  transform: scale(1.1);
 }
 
 .pricing h1 {
