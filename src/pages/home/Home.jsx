@@ -6,14 +6,14 @@ import Carrousel from "../../components/carrousel/Carrousel";
 
 // import Navbar from "../../components/navbar/Navbar";
 
-function Home({ handleCartItems }) {
+function Home({ handleCartItems, searchField }) {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   return (
     <div>
       <Carrousel />
-      <Product handleCartItems={handleCartItems} />
+      <Product handleCartItems={handleCartItems} searchField={searchField} />
     </div>
   );
 }

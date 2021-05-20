@@ -9,7 +9,7 @@ function Carrousel() {
         <Carousel.Item interval={5000}>
           <img
             className="d-block  img"
-            src="https://img5.goodfon.com/wallpaper/nbig/f/97/home-television-living-room.jpg"
+            src="https://images.pexels.com/photos/6527054/pexels-photo-6527054.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
             alt="First slide"
           />
           <Carousel.Caption>
@@ -20,7 +20,8 @@ function Carrousel() {
         <Carousel.Item interval={5000}>
           <img
             className="d-block  img"
-            src="https://i.ibb.co/djgN2h7/foto1.jpg"
+            // src="https://i.ibb.co/djgN2h7/foto1.jpg"
+            src="https://images.unsplash.com/photo-1584143987552-0ab1f595af6f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
             alt="Second slide"
           />
           <Carousel.Caption>

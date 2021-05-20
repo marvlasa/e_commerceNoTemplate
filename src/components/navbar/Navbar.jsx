@@ -5,7 +5,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 import Cart from "../cart/Cart";
 
-function NavBar({ cartItems, handleSearchBox }) {
+function NavBar({ cartItems, setSearchField }) {
+  function handleChange(event) {
+    setSearchField(event.target.value);
+  }
   return (
     <div>
       <Navbar bg="white" variant="white" className="nav" expand="md">
@@ -36,7 +39,7 @@ function NavBar({ cartItems, handleSearchBox }) {
           <FormControl
             type="text"
             placeholder="Search"
-            onChange={handleSearchBox}
+            onChange={handleChange}
             className="mr-sm-2"
           />
           {/* {<Button variant="outline-info">Search</Button>

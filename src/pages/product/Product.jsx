@@ -4,8 +4,12 @@ import "./Product.css";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-function Product({ handleCartItems }) {
+function Product({ handleCartItems, searchField }) {
   const [products, setProducts] = useState([]);
+
+  const filteredProducts = products.filter((item) => {
+    return item.name.toLowerCase().includes(searchField.toLowerCase());
+  });
 
   useEffect(() => {
     const URL = "http://localhost:3079/products";
@@ -22,12 +26,16 @@ function Product({ handleCartItems }) {
     products();
   }, []);
 
+  useEffect(() => {
+    console.log(searchField);
+  }, [searchField]);
+
   return (
     <div>
       <div className="container">
         <div className="row">
-          {products &&
-            products.map((item) => {
+          {filteredProducts &&
+            filteredProducts.map((item) => {
               return (
                 <div className="col-md-3 ">
                   <div className="pricing">
@@ -36,7 +44,7 @@ function Product({ handleCartItems }) {
                       <h1>{item.name}</h1>
                       {/* <p>{item.description.substring(0, 15)}</p> */}
                     </Link>
-                    <p2>${item.price} </p2>
+                    <p>${item.price} </p>
 
                     <div className="button">
                       <button

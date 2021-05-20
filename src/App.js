@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from "./pages/home/Home";
 import NavBar from "./components/navbar/Navbar";
@@ -18,34 +18,14 @@ function App() {
     setCartItems((cartItems) => [...cartItems, item]);
   };
 
-  const handleSearchBox = (event) => {
-    setSearchField(event.target.value);
-  };
-
-  const fetchData = (url) => {
-    fetch(url)
-      .then((res) => res.json())
-      .then((data) => {
-        setSearchField(data.results);
-      });
-  };
-
-  const SEARCH_API = "http://localhost:3079";
-
-  useEffect(() => {
-    let url = SEARCH_API;
-
-    if (searchField !== "") {
-      url = SEARCH_API;
-    } else {
-      fetchData(url);
-    }
-  }, [searchField]);
+  // const handleSearchBox = (event) => {
+  //   setSearchField(event.target.value);
+  // };
 
   return (
     <div className="App">
       <BrowserRouter>
-        <NavBar cartItems={cartItems} />
+        <NavBar cartItems={cartItems} setSearchField={setSearchField} />
 
         <Switch>
           <Route
@@ -54,7 +34,7 @@ function App() {
             render={(props) => (
               <Home
                 handleCartItems={handleCartItems}
-                handleSearchBox={handleSearchBox}
+                searchField={searchField}
               />
             )}
           />
