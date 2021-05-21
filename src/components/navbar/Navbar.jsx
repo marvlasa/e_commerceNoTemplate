@@ -28,7 +28,7 @@ function NavBar({ cartItems, setSearchField }) {
           </Link>
         </Navbar.Brand>
 
-        <Nav className="mr-auto ">
+        <Nav className="mr-auto font-link">
           {/* <Nav.Link >Inicio</Nav.Link> */}
           <Link className="nav-link1" to="/category">
             Categorías
@@ -52,7 +52,7 @@ function NavBar({ cartItems, setSearchField }) {
            }{" "} */}
         </Form>
         <Link to="/register">
-          <i class="fas fa-user"></i>
+          <i class="fas fa-user font-color"></i>
         </Link>
       </Navbar>
     </div>

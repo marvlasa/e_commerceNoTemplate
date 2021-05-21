@@ -5,7 +5,7 @@ img {
 
 .pricing {
   background-color: white;
-  max-height: 330px;
+  /* max-height: 330px; */
   margin-top: 2rem;
   padding: 1rem;
   border: 0.3px solid grey;
@@ -18,12 +18,21 @@ img {
   transition: transform 0.2s;
 }
 
+.heightCard {
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: gray; */
+}
 .pricing:hover {
   transform: scale(1.1);
 }
 
-.pricing h1 {
+.pricing h5 {
   font-size: 16px;
+  height: 32px;
+  margin-bottom: 0.5rem;
 }
 
 .pricing p {

@@ -41,16 +41,19 @@ function Product({ handleCartItems, searchField }) {
                   <div className="pricing">
                     <Link to={"/product/" + item.slug}>
                       <img src={item.img} />
-                      <h1>{item.name.substring(0, 9)}</h1>
-                      {/* <p>{item.description}</p> */}
+                      <div className="heightCard">
+                        <h5>{item.name}</h5>
+                        {/* <p>{item.description.substring(0, 50)}</p> */}
+                      </div>
                     </Link>
                     <p>${item.price} </p>
 
                     <div className="button">
                       <button
-                        onClick={handleCartItems}
+                        onClick={() => handleCartItems(item)}
                         className="btn btn-warning mb-3"
                       >
+                        <i class="fas fa-shopping-cart cart"></i>
                         Agregar al carrito
                       </button>
                     </div>

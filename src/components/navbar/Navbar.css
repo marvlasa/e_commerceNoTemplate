@@ -35,10 +35,18 @@
 }
 
 a {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(12, 12, 12, 0.6);
 }
 
 a:hover {
   color: rgb(187, 63, 88);
   text-decoration: none;
+}
+
+.font-color {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.font-link > a {
+  color: rgba(255, 255, 255, 0.6);
 }

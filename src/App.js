@@ -43,7 +43,10 @@ function App() {
           <Route path="/aboutUs" component={aboutUs} />
           <Route path="/category" component={Category} />
           <Route path="/product/:slug" component={ProductDetail} />
-          <Route path="/cart" component={CartBuy} />
+          <Route
+            path="/cart"
+            render={(props) => <CartBuy cartItems={cartItems} />}
+          />
           <Route path="/register" component={Register} />
         </Switch>
         <Footer />
